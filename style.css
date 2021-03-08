@@ -1,0 +1,378 @@
+body,h1,h2,h3,h4,h5,h6,span{
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* Header-section */
+.my-header{
+    background-color: #fff;
+    border-bottom: 1px solid #f3eeee;
+}
+.our-primary-menu li{
+    display: inline-block;
+}
+.our-primary-menu li a {
+    text-decoration: none;
+    color: #1e1e2b;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .4s;
+}
+.our-primary-menu li:hover > a{
+    color: #fb5849;
+}
+.our-primary-menu li a span {
+    font-size: 12px;
+    position: relative;
+    top: 2px;
+}
+/* Dropdown-menu */
+.our-primary-menu li{
+    position: relative;
+}
+.our-primary-menu li ul{
+    position: absolute;
+    top: 250%;
+    left: 0;
+    width: 230px;
+    background-color: #f9f9fa;
+    list-style: none;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06); 
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    padding-left: 0;
+    margin-left: 0;
+}
+.our-primary-menu li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 200%;
+}
+.our-primary-menu li ul li{
+    flex-direction: column;
+    display: block;
+}
+.our-primary-menu li ul li a{
+    padding: 15px 20px;
+    display: block;
+}
+.our-primary-menu li ul li a:hover{
+    letter-spacing: 2px;
+    background-color: #fff;
+
+}
+
+/* Slider-section */
+.slider-left {
+    background: url(./img/top-left-bg.jpg) center center no-repeat;
+    padding: 128px;
+    background-size: cover;
+}
+.pv-icon {
+    background: #fb6355;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+}
+.slider-left h4{
+    font-family: 'Dancing Script', cursive;
+    font-size: 54px;
+}
+.slider-left h5 {
+    font-size: 18px;
+    word-spacing: 12px;
+}
+/* About-Us-section */
+.about-us-right{
+    background: url(./img/about-video-bg.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 200px;
+}
+
+.about-us-left h6::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -38px;
+    height: 2px;
+    width: 35px;
+    background-color: #fb5849;
+}
+.about-us-left h2 {
+    font-size: 30px;
+    font-weight: 900;
+    width: 342px;
+    line-height: 40px;
+}
+.about-us-left h6 {
+    color: #fb5849;
+    font-size: 15px;
+    letter-spacing: 2px;
+    position: relative;
+    margin-left: 38px;
+}
+.about-us-left p {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 300;
+}
+.about-us-right span {
+    width: 70px;
+    display: block;
+    height: 70px;
+    border-radius: 50%;
+    background: #fb5849;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+}
+/* our-menu-section */
+.our-menu-section{
+    background-color: #fffafa;
+}
+.menu-item-1{
+    background: url(./img/menu-item-01.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+}
+.menu-item-2{
+    background: url(./img/menu-item-02.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+}
+.menu-item-3{
+    background: url(./img/menu-item-03.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+}
+.menu-item-4{
+    background: url(./img/menu-item-04.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+}
+.menu-item-5{
+    background: url(./img/menu-item-05.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+}
+.prize {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fb5849;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+}
+.prize h6 {
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: 800;
+}
+.item-details {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background: #fb5849;
+    padding: 20px;
+    width: 100%;
+    height: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+    transform-origin: bottom center;
+    transform: scaleY(0);
+}
+.item-details h1 {
+    font-size: 25px;
+}
+.menu-item-1:hover .item-details{
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+}
+.menu-item-1{
+    position: relative;
+}
+.menu-item-1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color:#fb5849 ;
+}
+.menu-icon span {
+    font-size: 30px;
+    color: #fb5849;
+}
+/* Our-chefs-section */
+.our-chefs-section h2 {
+    font-weight: 800;
+    font-size: 30px;
+    width: 300px;
+}
+.our-chefs-section h6 {
+    color: #fb5849;
+}
+.chefs-pic{
+    border: 1px solid #000;
+    position: relative;
+    transition: .4s;
+}
+.chefs-contact {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 99%;
+    height: 0%;
+    background-color: rgb(0, 0, 0, .6);
+    visibility: hidden;
+    opacity: 0;
+}
+.chefs-contact ul li{
+    display: inline-block;
+}
+.chefs-contact ul li a{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #000;
+    background-color: #fff;
+}
+.chefs-contact ul li a:hover{
+    background-color: #fb5849;
+}
+.chefs-pic:hover .chefs-contact{
+    height: 78%;
+    visibility: visible;
+    opacity: 1;
+}
+.chefs-pic:hover .chefs-bio h4{
+    color: #fb5849;
+}
+/* contact-us css start */
+.contact-us-left h2 {
+    width: 524px;
+}
+.contact-us-left p{}
+
+.contact-us{
+    background-image: url("https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/reservation-bg.jpg");
+    padding: 110px 0px;
+}
+.card{
+    background: #fff;
+}
+.card-body span{
+    width: 80px;
+    height: 80px;
+    background: #fb5849;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 80px;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    position: relative;
+    top: -52px;
+    left: 9px;
+}
+.card-body .card-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+.card-body h5 {
+    font-size: 16px;
+    font-weight: 300;
+}
+.card button{
+    width: 100%;
+    font-weight: 500;
+    background: #fb5849;
+    color: white;
+    padding: 10px 0px;
+}
+/* Special-meal-section */
+.s-meal-title h6{
+    color: #fb5849;
+}
+.s-meal-title h2{
+    font-size: 30px;
+    font-weight: 800;
+    width: 34%;
+    margin: auto;
+}
+.spcial-item .card .card-body{
+    margin-left:-30px;
+}
+.spcial-item .card .card-body h5{
+    margin-top: -10px;
+}
+.spcial-item .card .card-body p{
+    font-style: 15px;
+}
+.spcial-item .card .card-footer {
+    background: #fb5849;
+    height: 55%;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+.spcial-item .card .card-footer h2 {
+    font-size: 18px;
+    line-height: 55px;
+    font-weight: 600;
+}
+/* Footer-section */
+.footer-section{
+    background-color: #fb5849;
+}
+.footer-social-menu{
+}
+.footer-social-menu ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+.footer-social-menu ul li{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.footer-social-menu ul li a {
+    color: #fb5849;
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    background-color: #fff;
+    font-size: 21px;
+    transition: .4s;
+}
+.footer-social-menu ul li a:hover{
+    color: #000;
+}
+.footer-copy-right p {
+    font-weight: 500;
+    margin-bottom: 0;
+}
